@@ -11,22 +11,25 @@
     <!--自己新建的更改样式的CSS样式-->
     <link href="./CSS/mycss.css" rel="stylesheet" type="text/css">
     <!-- 新 Bootstrap4 核心 CSS 文件 -->
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
 
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="JS/jquery-2.1.0.js"></script>
 
     <!-- bootstrap.bundle.min.js 用于弹窗、提示、下拉菜单，包含了 popper.min.js -->
     <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
 
     <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/bootstrap.js"></script>
+
+    
 </head>
 
 <body>
     <div class="container">
 
-        <ul class="nav nav-pills justify-content-center">
+        <!-- <ul class="nav nav-pills justify-content-center">
             <li class="nav-item">
                 <a class="nav-link" href="./Html/Login.html">登录</a>
             </li>
@@ -47,15 +50,65 @@
             <li class="nav-item">
                 <a class="nav-link " href="./Html/Mine.html">个人中心</a>
             </li>
-        </ul>
+        </ul> -->
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">iphone商城</a>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="./Html/Login.html">登录</a>
+                        </li>
+                        <li class="active">
+                            <a href="/iphoneproject/index.html">首页</a>
+                        </li>
+                        <li>
+                            <a href="./Html/Classify.html">分类</a>
+                        </li>
 
+                        <li>
+                            <a href="./Html/Mine.html">个人中心</a>
+                        </li>
 
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                发现
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="./Html/Recommend.html">推荐</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./Html/Check.html">小技巧</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./Html/News.html">新奇</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container-fluid" style="float: right;">
+
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">搜索</button>
+                    </form>
+                </div>
+            </div>
+        </nav> 
     </div>
 
     <div class="container">
         <!--开始：main-->
         <!-- <div class="container"> -->
-        <div class="head">
+        <!-- <div class="head">
             <div>
                 <img style="height: 18px;position:absolute;z-index:2;margin: 4px 0px 0px 5px;" src="./Img/搜索.png" />
                 <input type="text" placeholder="请输入搜索的手机型号" id="inp_txt" />
@@ -66,13 +119,13 @@
             </div>
             <div id="Wheelplanting">
                 <div id="myCarousel" class="carousel slide">
-                    <!-- 轮播（Carousel）指标  -->
+                    轮播（Carousel）指标 
                     <ol class="carousel-indicators">
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#myCarousel" data-slide-to="1"></li>
                         <li data-target="#myCarousel" data-slide-to="2"></li>
                     </ol>
-                    <!-- 轮播（Carousel）项目  -->
+                    轮播（Carousel）项目 
                     <div class="carousel-inner">
                         <div class="item active">
                             <img id="item_img" src="./Img/p30.png" alt="First slide">
@@ -87,15 +140,49 @@
                             <div class="carousel-caption"></div>
                         </div>
                     </div>
-                    <!-- <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
 						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 						<span class="sr-only"></span>
 					</a>
 					<a class="right carousel-control"  href="#myCarousel" role="button" data-slide="next">
 						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 						<span class="sr-only"></span>
-					</a>  -->
+					</a>  
                 </div>
+            </div>
+        </div> -->
+        <div id="Wheelplanting">
+            <div id="myCarousel" class="carousel slide">
+                <!-- 轮播（Carousel）指标 -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- 轮播（Carousel）项目 -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="./Img/index1.png" alt="First slide">
+                        <!-- <div class="carousel-caption">标题 1</div> -->
+                    </div>
+                    <div class="item">
+                        <img src="./Img/index2.png" alt="Second slide">
+                        <!-- <div class="carousel-caption">标题 2</div> -->
+                    </div>
+                    <div class="item">
+                        <img src="./Img/index3.png" alt="Third slide">
+                        <!-- <div class="carousel-caption">标题 3</div> -->
+                    </div>
+                </div>
+                <!-- 轮播（Carousel）导航 -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
         <nav class="row">
@@ -115,15 +202,15 @@
         <!-- 紧紧满足装饰作用 -->
         <div style="height: 10px;background-color: #E3E3E3;"></div>
         <div class="seckill">
-            <div id="seckill">
+             <div id="seckill">
                 <div id="L">
                     <h4>限时秒杀</h4>
                 </div>
                 <div id="R">
                     <h6>距离活动结束 4天13：35:08</h6>
                 </div>
-            </div>
-            <div class="row seckill_img">
+            </div> 
+            <!-- <div class="row seckill_img">
                 <div class="col-xs-4 col-sm-4 col-md-4">
                     <img id="skl_img" src="./Img/苹果X.png" />
                     <h4>￥3349</h4>
@@ -136,8 +223,50 @@
                     <img id="skl_img" src="./Img/小米耳机.png" />
                     <h4>￥58</h4>
                 </div>
+            </div> -->
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="./Img/苹果X.png" alt="...">
+                        <div class="caption">
+                            <h3>IphoneX</h3>
+                            <p>...</p>
+                            <p>
+                                <a href="#" class="btn btn-primary" role="button">查看详情</a>
+                                <a href="#" class="btn btn-default" role="button">购买</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="./Img/键盘.png" alt="...">
+                        <div class="caption">
+                            <h3>达尔优键盘</h3>
+                            <p>...</p>
+                            <p>
+                                <a href="#" class="btn btn-primary" role="button">查看详情</a>
+                                <a href="#" class="btn btn-default" role="button">购买</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="./Img/小米耳机.png" alt="...">
+                        <div class="caption">
+                            <h3>小米耳机</h3>
+                            <p>...</p>
+                            <p>
+                                <a href="#" class="btn btn-primary" role="button">查看详情</a>
+                                <a href="#" class="btn btn-default" role="button">购买</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
         <div>
             <img style="width: 100%;padding-bottom: 30px;" src="./Img/p30.png" />
         </div>
@@ -158,9 +287,6 @@
         </div>
     </div>
 
-    <script src="./JS/jquery-1.11.0.min.js"></script>
-    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
-    <script src="./JS/bootstrap.min.js"></script>
 </body>
 
 </html>
